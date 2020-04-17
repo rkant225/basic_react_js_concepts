@@ -5,7 +5,7 @@ body{
 
 
 .my-main-header{
-    min-height: 80px;
+    min-height: 10px;
     background-color:grey;
     display: flex;
     flex-wrap: wrap;
@@ -21,9 +21,9 @@ body{
 .my-main-header button{
     background-color: black;
     color: blanchedalmond;
-    padding: 20px;
+    padding: 10px;
     border-radius: 2px 20px;
-    margin: 30px;
+    margin: 10px;
 }
 
 .my-main-header button:hover{
