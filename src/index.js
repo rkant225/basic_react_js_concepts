@@ -1,17 +1,17 @@
+// 1. import react and react-dom
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import ReactDom from 'react-dom';
+import {Provider} from 'react-redux';
+import {createStore} from 'redux';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import App from './App'
+import reducers from '../src/Redux/Reducers';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// 2. create a react component
+// Loaded from App.js
+
+
+
+// 3. render component on root element
+const myStore = createStore(reducers);
+ReactDom.render(<Provider store={myStore}><App/></Provider> ,document.getElementById("root"));
